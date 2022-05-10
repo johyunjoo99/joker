@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MinSans-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MinSans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#fullscreen {
+    width: 100%;
+    background-color: #1c1c1c;
+}
+
+#character {
+    width: 1200px;
+    height: 3340px;
+    background-color: #1c1c1c;
+    margin: 0 auto;
+}
+
+/* 바 전체 값 */
+#bar {
+    width: 270px;
+    height: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+/* 바 캐릭터 이름 */
+.bar_name {
+    color: #e8e8e8;
+    margin-top: 105px;
+    margin-left: 15px;
+    font-family: 'MinSans-Bold';
+    position: absolute;
+    font-size: 17px;
+}
+
+/* 아서 플렉 바 */
+#bar_1 {
+    width: 240px;
+    height: 160px;
+    position: relative;
+    background-image: url(../img/sub1/bar_1.png);
+    background-position: center;
+    background-size: contain;
+    margin-top: 90px;
+}
+
+#bar_1 img {
+    width: 240px;
+    height: 160px;
+    float: left;
+}
+
+#bar_1 img:nth-of-type(2) {
+    width: 240px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#bar_1:hover img:nth-of-type(2) {
+    opacity: 1 !important;
+}
+
+/* 페니 플렉 바 */
+#bar_2 {
+    width: 240px;
+    height: 160px;
+    position: relative;
+    background-image: url(../img/sub1/black_bar_2.png);
+    background-position: center;
+    background-size: contain;
+    margin-top: 40px;
+}
+
+#bar_2 img {
+    width: 240px;
+    height: 160px;
+    float: left;
+}
+
+#bar_2 img:nth-of-type(2) {
+    width: 240px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#bar_2:hover img:nth-of-type(2) {
+    opacity: 1 !important;
+}
+
+/* 머레이 프랭클린 바 */
+#bar_3 {
+    width: 240px;
+    height: 160px;
+    position: relative;
+    background-image: url(../img/sub1/black_bar_3.png);
+    background-position: center;
+    background-size: contain;
+    margin-top: 40px;
+}
+
+#bar_3 img {
+    width: 240px;
+    height: 160px;
+    float: left;
+}
+
+#bar_3 img:nth-of-type(2) {
+    width: 240px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#bar_3:hover img:nth-of-type(2) {
+    opacity: 1 !important;
+}
+
+/* 토머스 웨인 바 */
+#bar_4 {
+    width: 240px;
+    height: 160px;
+    position: relative;
+    background-image: url(../img/sub1/black_bar_4.png);
+    background-position: center;
+    background-size: contain;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#bar_4 img {
+    width: 240px;
+    height: 160px;
+    float: left;
+}
+
+#bar_4 img:nth-of-type(2) {
+    width: 240px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#bar_4:hover img:nth-of-type(2) {
+    opacity: 1 !important;
+}
+
+/* 캐릭터 이름 */
+h2 {
+    width: 400px;
+    height: 140px;
+    border-bottom: 4px solid #e8e8e8;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 46px;
+    font-family: 'MinSans-Bold';
+    color: #e8e8e8;
+    z-index: 1;
+}
+
+/* 캐릭터 대사 */
+.speech {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Chosunilbo_myungjo';
+    color: #e8e8e8;
+    line-height: 27.5px;
+    z-index: 1;
+}
+
+#character .speech:hover i {
+    color: #f37121;
+    transition: all ease 0.7s;
+}
+
+/* 캐릭터 소개 */
+p {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 15px;
+    font-family: 'MinSans-Light';
+    color: #e8e8e8;
+    z-index: 1;
+    line-height: 25px;
+}
+
+/* 아서 플렉 캐릭터 박스 */
+#cha_1 {
+    width: 900px;
+    height: 800px;
+    background-color: #1c1c1c;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 아서 플렉 이미지_1 */
+#cha_1 img:first-child {
+    width: 300px;
+    height: 160px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 690px;
+    transform: rotate(15deg);
+    z-index: 0;
+}
+
+/* 아서 플렉 이미지_2 */
+#cha_1 img:nth-of-type(2) {
+    width: 250px;
+    height: 180px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 600px;
+    transform: rotate(-16deg);
+    z-index: 0;
+}
+
+/* 페니 플렉 캐릭터 박스 */
+#cha_2 {
+    width: 900px;
+    height: 800px;
+    background-color: #1c1c1c;
+    float: right;
+}
+
+#cha_2 img {
+    width: 210px;
+    height: 280px;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 700px;
+    transform: rotate(12deg);
+    z-index: 0;
+}
+
+/* 머레이 프랭클린 캐릭터 박스 */
+#cha_3 {
+    width: 900px;
+    height: 800px;
+    background-color: #1c1c1c;
+    float: right;
+}
+
+#cha_3 img {
+    width: 280px;
+    height: 210px;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 550px;
+    transform: rotate(-15deg);
+    z-index: 0;
+}
+
+/* 토머스 웨인 캐릭터 박스 */
+#cha_4 {
+    width: 900px;
+    height: 800px;
+    background-color: #1c1c1c;
+    float: right;
+}
+
+#cha_4 img {
+    width: 210px;
+    height: 350px;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 590px;
+    transform: rotate(10deg);
+    z-index: 1;
+}
